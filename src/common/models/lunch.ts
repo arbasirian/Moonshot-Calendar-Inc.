@@ -1,3 +1,19 @@
+export interface LunchListFilter {
+  name?: string;
+  ids?: string;
+  lsp__id?: string;
+  lsp__name?: string;
+  serial_number?: string;
+  launcher_config__id?: string;
+  rocket__spacecraftflight__spacecraft__name?: string;
+  is_crewed: boolean;
+  include_suborbital: boolean;
+  spacecraft_config__ids?: string;
+  related: boolean;
+  location__ids?: string;
+  lsp__ids?: string;
+}
+
 export interface LunchModel {
   count: number;
   next: string;

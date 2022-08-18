@@ -1,16 +1,10 @@
-import React, { useEffect } from 'react';
-import { MapView } from 'components';
-import { getLunchList } from 'common/services/lunch';
+import React from 'react';
+import { LunchesList } from 'components';
 
 function App() {
-  useEffect(() => {
-    getLunchList().then((data) => {
-      console.log('data', data.results);
-    });
-  }, []);
   return (
     <div className="App">
-      <MapView />
+      <LunchesList />
     </div>
   );
 }
