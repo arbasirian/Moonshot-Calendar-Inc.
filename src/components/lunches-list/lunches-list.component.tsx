@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-const LunchesListComponent = () => {
+const LunchesListComponent: FC = () => {
   return <div>LunchesListComponent</div>;
 };
 
