@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Moonshot Calendar Inc.",
+  "name": "Application that allows a user to see rocket launches for a specific time window, plotted on a map",
   "icons": [
     {
       "src": "favicon.ico",
