@@ -1,3 +1,4 @@
+import { notification } from 'antd';
 import Axios from 'axios';
 
 Axios.defaults.baseURL = process.env.REACT_APP_BASE_URL_API;
@@ -13,7 +14,9 @@ Axios.interceptors.response.use(
     if (error?.config.url)
       if (response) {
         // Request made and server responded
-        // notificationHelper.errorNotification(response?.data);
+        notification.error({
+          message: JSON.stringify(response?.data),
+        });
 
         return Promise.reject(error.response);
       } else if (error.request) {
